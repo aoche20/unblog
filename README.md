@@ -1,1 +1,1 @@
-# unblog SymRecette est une application qui va te permettre de créer des recettes à base d'ingrédients que tu auras toi même créer.Tu pourras partager les recettes à ta communauté sur le site ou les garder en privé 
+# SymRecette est une application qui va te permettre de créer des recettes à base d'ingrédients que tu auras toi même créer.Tu pourras partager les recettes à ta communauté sur le site ou les garder en privé 
