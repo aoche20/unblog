@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IngredientController!{% endblock %}
+
+{% block body %}
+
+<div class="container mt-4 ">
+<h1>Mes ingrédients</h1>
+<div class="count">
+<h4>Il y a
+    {{ ingredients.getTotalItemCount }} ingredients au total
+    </h4>
+</div>
+<div class="row row-cols-1 row-cols-md-6 ">
+  {% for ingredient in ingredients %}
+      <div class="card" style="width: 12rem;">
+  <div class="card-body">
+    <h5 class="card-title">Id :{{ingredient.id}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Nom :{{ingredient.name}}</h6>
+    <p class="card-text">Prix :{{ingredient.price}}</p>
+    
+    <a href="#" >Date :{{ingredient.createdat|date('d/m/Y')}}</a>
+  </div>
+</div>
+  {% endfor %}
+  </div>
+  <div class="navigation d-flex justify-content-center">
+    {{ knp_pagination_render(ingredients) }}
+</div>
+</div>
+ {% endblock %}
